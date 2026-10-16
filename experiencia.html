@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La experiencia Arrive Aruba: el video de llegada a la isla, su sonido y la historia de la marca.">
+  <meta name="theme-color" content="#23405E">
+  <title>Experiencia — Arrive Aruba | HTML5 Edition</title>
+  <link rel="icon" href="assets/icons/arrive-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/arrive-favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="assets/icons/arrive-apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Arrive Aruba, página de inicio">
+      <img src="assets/images/arrive-logo-blue.webp" alt="Arrive Aruba" width="640" height="429">
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="experiencia.html" aria-current="page">Experiencia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="titulo-experiencia">
+      <p class="eyebrow">Experiencia</p>
+      <h1 id="titulo-experiencia">La llegada a la isla</h1>
+      <p class="lead">Todo empieza en la ventanilla de un avión. Arrive Aruba convierte ese instante en el centro de su historia.</p>
+    </section>
+
+    <section class="section media-section" aria-labelledby="titulo-video">
+      <div class="section-head">
+        <p class="eyebrow">Video</p>
+        <h2 id="titulo-video">Desde la ventanilla</h2>
+      </div>
+      <figure class="media-figure">
+        <video id="video-llegada" controls preload="metadata" playsinline width="1920" height="1080" poster="assets/images/arrive-aruba-llegada-poster.jpg">
+          <source src="assets/video/arrive-aruba-llegada.webm" type="video/webm">
+          <source src="assets/video/arrive-aruba-llegada.mp4" type="video/mp4">
+          <track kind="descriptions" src="assets/video/arrive-aruba-llegada-descripciones.vtt" srclang="es" label="Descripción visual en español" default>
+          <p>Tu navegador no puede reproducir este video. Puedes <a href="assets/video/arrive-aruba-llegada.mp4">descargarlo en formato MP4</a>.</p>
+        </video>
+        <figcaption>Video de bienvenida de Arrive Aruba (19 segundos). Se reproduce solo cuando lo inicias.</figcaption>
+      </figure>
+      <p class="track-output" id="descripcion-video" aria-live="polite">Pulsa «reproducir» para ver la descripción de cada escena.</p>
+    </section>
+
+    <section class="section media-section media-section--audio" aria-labelledby="titulo-audio">
+      <div class="section-head">
+        <p class="eyebrow">Audio</p>
+        <h2 id="titulo-audio">El sonido de la llegada</h2>
+      </div>
+      <figure class="media-figure audio-figure">
+        <audio controls preload="none">
+          <source src="assets/audio/arrive-aruba-ambiente.mp3" type="audio/mpeg">
+          <source src="assets/audio/arrive-aruba-ambiente.m4a" type="audio/mp4">
+          <p>Tu navegador no puede reproducir este audio. Puedes <a href="assets/audio/arrive-aruba-ambiente.mp3">descargarlo en formato MP3</a>.</p>
+        </audio>
+        <figcaption>Pista de sonido del video de bienvenida, extraída como archivo independiente (19 segundos).</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-historia">
+      <div class="section-head">
+        <p class="eyebrow">Historia</p>
+        <h2 id="titulo-historia">Tres momentos de la llegada</h2>
+      </div>
+      <ol class="moments">
+        <li>
+          <h3>La ventanilla</h3>
+          <p>El primer vistazo al mar turquesa desde el aire.</p>
+        </li>
+        <li>
+          <h3>La isla</h3>
+          <p>La luz, la arena y el ritmo tranquilo de los primeros días.</p>
+        </li>
+        <li>
+          <h3>El regreso</h3>
+          <p>Una prenda que conserva la sensación de la isla al volver a casa.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-divi">
+      <figure class="banner-figure">
+        <img src="assets/images/arrive-island-banner.jpg" alt="Árbol divi-divi junto al mar en tonos azules, con el texto «The island stays with you» y la marca de Arrive Aruba." width="1600" height="592" loading="lazy">
+        <figcaption>El divi-divi, árbol emblemático de Aruba, inspira uno de los símbolos de la marca.</figcaption>
+      </figure>
+      <div class="story-copy story-copy--center">
+        <h2 id="titulo-divi">Un símbolo de la isla</h2>
+        <p>Los alisios inclinan el divi-divi siempre en la misma dirección. Para Arrive Aruba representa la constancia de la isla: una referencia que se mantiene, viaje tras viaje.</p>
+      </div>
+    </section>
+
+    <aside class="section aside-note" aria-labelledby="titulo-ficha-medios">
+      <h2 id="titulo-ficha-medios">Ficha de los medios</h2>
+      <dl class="spec-list">
+        <dt>Video</dt>
+        <dd>WebM (VP9) y MP4 (H.264), 19 segundos, sin reproducción automática.</dd>
+        <dt>Descripción</dt>
+        <dd>Pista WebVTT en español con la descripción de cada escena.</dd>
+        <dt>Audio</dt>
+        <dd>MP3 y M4A (AAC), extraídos del video original.</dd>
+      </dl>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/images/arrive-logo-negative.webp" alt="Arrive Aruba" width="640" height="429" loading="lazy">
+      <p>Ropa resort nacida en la isla.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navegación del pie de página">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <img class="footer-tree" src="assets/icons/arrive-dividivi-footer.svg" alt="" width="1869" height="1223" loading="lazy">
+    <p class="footer-legal"><small>© 2026 Arrive Aruba. Todos los derechos reservados. Proyecto académico: e-actividad 2.1, Frontend.</small></p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
