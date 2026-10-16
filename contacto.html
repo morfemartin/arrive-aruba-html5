@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacto de Arrive Aruba: formulario de demostración con validación nativa de HTML5.">
+  <meta name="theme-color" content="#23405E">
+  <title>Contacto — Arrive Aruba | HTML5 Edition</title>
+  <link rel="icon" href="assets/icons/arrive-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/arrive-favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="assets/icons/arrive-apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Arrive Aruba, página de inicio">
+      <img src="assets/images/arrive-logo-blue.webp" alt="Arrive Aruba" width="640" height="429">
+    </a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="titulo-contacto">
+      <p class="eyebrow">Contacto</p>
+      <h1 id="titulo-contacto">Hablemos de la isla</h1>
+      <p class="lead">¿Tienes una pregunta sobre una prenda, un pedido o la historia de la marca? Escríbenos.</p>
+    </section>
+
+    <section class="section contact-layout" aria-labelledby="titulo-formulario">
+      <div class="contact-intro">
+        <h2 id="titulo-formulario">Formulario de contacto</h2>
+        <p class="notice" role="note"><strong>Formulario de demostración.</strong> Esta página forma parte de un proyecto académico: comprueba los datos en tu navegador, pero <em>no los envía ni los guarda</em> en ningún servidor.</p>
+        <h3>Antes de escribirnos</h3>
+        <ul>
+          <li>Ten a mano el número de pedido, si lo tienes.</li>
+          <li>Indica la prenda, la talla y el color.</li>
+          <li>Los campos marcados con * son obligatorios.</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="formulario-contacto">
+        <fieldset>
+          <legend>Tus datos</legend>
+          <div class="field">
+            <label for="nombre">Nombre completo *</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="2" maxlength="80">
+          </div>
+          <div class="field">
+            <label for="correo">Correo electrónico *</label>
+            <input id="correo" name="correo" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" pattern="[0-9+()\s\-]{7,20}" aria-describedby="ayuda-telefono">
+            <small id="ayuda-telefono">Solo números, espacios y los signos + ( ) -.</small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu consulta</legend>
+          <div class="field">
+            <label for="motivo">Motivo de la consulta *</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecciona una opción</option>
+              <option value="prenda">Información sobre una prenda</option>
+              <option value="tallas">Tallas y ajuste</option>
+              <option value="pedido">Estado de un pedido</option>
+              <option value="marca">Colaboraciones con la marca</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="prenda">Prenda de interés</label>
+            <select id="prenda" name="prenda">
+              <option value="">Ninguna en particular</option>
+              <option value="polo">Polo Performance Piqué</option>
+              <option value="hoodie">Hoodie con cremallera</option>
+              <option value="camiseta">Camiseta Crew</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="1000"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencia de respuesta</legend>
+          <div class="choice-row">
+            <input id="respuesta-correo" name="respuesta" type="radio" value="correo" checked>
+            <label for="respuesta-correo">Por correo electrónico</label>
+          </div>
+          <div class="choice-row">
+            <input id="respuesta-telefono" name="respuesta" type="radio" value="telefono">
+            <label for="respuesta-telefono">Por teléfono</label>
+          </div>
+          <div class="choice-row">
+            <input id="acepto" name="acepto" type="checkbox" required>
+            <label for="acepto">Entiendo que este formulario es una demostración y que mis datos no se envían. *</label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="button button--primary" type="submit">Comprobar formulario</button>
+          <button class="button button--outline" type="reset">Borrar campos</button>
+        </div>
+        <p class="form-status" id="estado-formulario" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <aside class="section aside-note" aria-labelledby="titulo-tiempos">
+      <h2 id="titulo-tiempos">Información útil</h2>
+      <dl class="spec-list">
+        <dt>Correo de la marca</dt>
+        <dd><a href="mailto:hello@arrivearuba.com">hello@arrivearuba.com</a></dd>
+        <dt>Ubicación</dt>
+        <dd>Aruba, mar Caribe.</dd>
+      </dl>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/images/arrive-logo-negative.webp" alt="Arrive Aruba" width="640" height="429" loading="lazy">
+      <p>Ropa resort nacida en la isla.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navegación del pie de página">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <img class="footer-tree" src="assets/icons/arrive-dividivi-footer.svg" alt="" width="1869" height="1223" loading="lazy">
+    <p class="footer-legal"><small>© 2026 Arrive Aruba. Todos los derechos reservados. Proyecto académico: e-actividad 2.1, Frontend.</small></p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
