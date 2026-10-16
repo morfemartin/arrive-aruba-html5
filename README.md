@@ -14,7 +14,11 @@
   <img src="https://img.shields.io/badge/CSS3-responsive-1572B6?logo=css3&amp;logoColor=white" alt="CSS3 responsive">
   <img src="https://img.shields.io/badge/JavaScript-nativo-F7DF1E?logo=javascript&amp;logoColor=black" alt="JavaScript nativo">
   <img src="https://img.shields.io/badge/W3C%20Nu%20Html%20Checker-0%20errores-2E7D32" alt="W3C Nu Html Checker: 0 errores">
+  <a href="https://github.com/morfemartin/arrive-aruba-html5/actions/workflows/validate.yml"><img src="https://github.com/morfemartin/arrive-aruba-html5/actions/workflows/validate.yml/badge.svg" alt="Validación HTML en GitHub Actions"></a>
+  <a href="https://morfemartin.github.io/arrive-aruba-html5/"><img src="https://img.shields.io/badge/sitio-publicado-386395" alt="Sitio publicado en GitHub Pages"></a>
 </p>
+
+<p align="center"><strong>Sitio publicado:</strong> <a href="https://morfemartin.github.io/arrive-aruba-html5/">https://morfemartin.github.io/arrive-aruba-html5/</a></p>
 
 ![Vista de escritorio de la página de inicio](docs/capturas/escritorio-inicio.jpg)
 
@@ -128,7 +132,7 @@ Resumen; el detalle con evidencias está en [docs/MATRIZ-DE-CUMPLIMIENTO.md](doc
 | REQ-010 Originalidad y autoría | Cumple parcialmente: falta la confirmación del docente sobre el código asistido por IA |
 | REQ-011 Ortografía | Cumple parcialmente: falta la lectura final del estudiante |
 | REQ-012 Referencias APA 7 | Cumple |
-| REQ-013 Entrega (GitHub y ZIP) | Cumple parcialmente: faltan la publicación y la cédula para el nombre del ZIP |
+| REQ-013 Entrega (GitHub y ZIP) | Cumple parcialmente: repositorio publicado; falta la cédula para el nombre del ZIP |
 | REQ-014 Video | Cumple parcialmente: guion listo; la grabación corresponde al estudiante |
 
 ## Validación
@@ -141,7 +145,7 @@ Resumen; el detalle con evidencias está en [docs/MATRIZ-DE-CUMPLIMIENTO.md](doc
 | Responsive | Chrome automatizado (375, 768 y 1440 px) | Sin desbordamiento horizontal |
 | Multimedia y formulario | Chrome automatizado por HTTP | Funcionan según lo esperado |
 
-El repositorio incluye un flujo de GitHub Actions ([.github/workflows/validate.yml](.github/workflows/validate.yml)) que valida el HTML en cada cambio. Informe completo: [docs/CONTROL-DE-CALIDAD.md](docs/CONTROL-DE-CALIDAD.md).
+El flujo de GitHub Actions ([.github/workflows/validate.yml](.github/workflows/validate.yml)) valida el HTML con el validador oficial en cada cambio; [su primera ejecución](https://github.com/morfemartin/arrive-aruba-html5/actions/runs/38971143151) terminó con éxito. Informe completo: [docs/CONTROL-DE-CALIDAD.md](docs/CONTROL-DE-CALIDAD.md).
 
 ## Accesibilidad
 
@@ -181,14 +185,15 @@ Ver [docs/REFERENCIAS-APA.md](docs/REFERENCIAS-APA.md) (formato APA 7).
 |---|---|
 | Sitio de cuatro páginas | Terminado y validado |
 | Documentación | Terminada |
-| Repositorio en GitHub | Pendiente de publicación |
-| GitHub Pages | Pendiente |
+| Repositorio en GitHub | Publicado: [morfemartin/arrive-aruba-html5](https://github.com/morfemartin/arrive-aruba-html5) |
+| GitHub Pages | Publicado y verificado: [https://morfemartin.github.io/arrive-aruba-html5/](https://morfemartin.github.io/arrive-aruba-html5/) |
 | ZIP de entrega | Pendiente de la cédula del estudiante |
 | Video explicativo | Guion listo; grabación pendiente |
 
 ## Entrega
 
-- Repositorio: `morfemartin/arrive-aruba-html5` (pendiente de publicación).
+- Repositorio: [github.com/morfemartin/arrive-aruba-html5](https://github.com/morfemartin/arrive-aruba-html5).
+- Sitio publicado: [https://morfemartin.github.io/arrive-aruba-html5/](https://morfemartin.github.io/arrive-aruba-html5/).
 - ZIP de respaldo: `cedula_nombre.zip`, con la cédula y el nombre reales del estudiante. Formato ZIP, no RAR.
 - Guion del video: [docs/GUION-VIDEO.md](docs/GUION-VIDEO.md).
 

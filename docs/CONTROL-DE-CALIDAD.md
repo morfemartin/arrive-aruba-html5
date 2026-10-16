@@ -58,6 +58,17 @@ Las tablas se desplazan dentro de su propio contenedor en pantallas estrechas, p
 
 **Aviso esperado:** Chrome cancela la precarga parcial del video (`ERR_ABORTED`) cuando solo necesita sus metadatos. No es un error del sitio.
 
+## 5 bis. Sitio publicado (GitHub Pages)
+
+URL: https://morfemartin.github.io/arrive-aruba-html5/
+
+| Prueba | Resultado |
+|---|---|
+| Cuatro páginas, video WebM, pista VTT y audio MP3 | Código 200 |
+| Video, pista y audio en el navegador | Igual que en local: WebM reproducido, 6 descripciones, MP3 reproducido |
+| Formulario | Validación nativa correcta; no se envían datos |
+| GitHub Actions (Nu Html Checker) | Primera ejecución: éxito |
+
 ## 6. Formulario
 
 | Prueba | Resultado |
