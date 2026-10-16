@@ -1,0 +1,96 @@
+/* =========================================================
+   Arrive Aruba — HTML5 Edition
+   Adaptación responsive. Diseño base: móvil (desde 320 px).
+   ========================================================= */
+
+/* Teléfonos: navegación compacta debajo del logotipo. */
+@media (max-width: 599px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .25rem;
+  }
+
+  .site-nav ul {
+    gap: 0 1.1rem;
+  }
+
+  .site-nav a {
+    font-size: .66rem;
+    letter-spacing: .14em;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 100%;
+  }
+
+  .spec-list {
+    grid-template-columns: 1fr;
+    gap: .2rem;
+  }
+
+  .spec-list dd {
+    margin-bottom: .75rem;
+  }
+
+  fieldset {
+    padding: 1.1rem;
+  }
+
+  .form-actions .button {
+    flex: 1 1 100%;
+  }
+}
+
+/* Tabletas: dos columnas en las cuadrículas. */
+@media (min-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .moments {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Escritorio: composiciones editoriales a dos columnas. */
+@media (min-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .story,
+  .product-detail {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(2.5rem, 6vw, 6rem);
+  }
+
+  .story--reverse figure,
+  .product-detail--reverse figure {
+    order: 2;
+  }
+
+  .product-detail .product-copy {
+    position: sticky;
+    top: 7rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    align-items: start;
+  }
+
+  .contact-intro {
+    position: sticky;
+    top: 7rem;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+
+  .footer-legal {
+    grid-column: 1 / -1;
+  }
+}
