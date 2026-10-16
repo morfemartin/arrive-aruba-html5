@@ -1,0 +1,28 @@
+# Matriz de cumplimiento
+
+Fecha de la última verificación: 16 de octubre de 2026.
+
+Estados: CUMPLE · CUMPLE PARCIALMENTE · NO CUMPLE · NO VERIFICADO · NO APLICA.
+
+| ID | Requisito | Prioridad | Estado | Evidencia | Pendiente |
+|---|---|---|---|---|---|
+| REQ-001 | Estructura HTML5 completa en cada documento | Alta | CUMPLE | Las cuatro páginas incluyen `<!DOCTYPE html>`, `<html lang="es">`, `<meta charset="UTF-8">`, `<meta name="viewport">`, `<title>` propio y `<body>`. Nu Html Checker: 0 mensajes. | — |
+| REQ-002 | Semántica HTML5 | Alta | CUMPLE | `header`, `nav` (principal y de pie), `main`, `section`, `article` (historias y prendas), `aside` (notas en colección, experiencia y contacto), `footer`, `figure` y `figcaption` en las cuatro páginas. Detalle en `ARQUITECTURA.md`. | — |
+| REQ-003 | Encabezados y texto | Alta | CUMPLE | Un único `h1` por página y jerarquía `h2`/`h3` sin saltos. `strong` y `em` en `index.html`; `blockquote` en `index.html`; `small` en el pie y en `coleccion.html` (nota de medidas) y `contacto.html` (ayuda del teléfono). | — |
+| REQ-004 | Listas | Alta | CUMPLE | `ul`: navegación, detalles de prendas y consejos de contacto. `ol`: proceso de diseño (`coleccion.html#franela`) y tres momentos (`experiencia.html`). `dl`/`dt`/`dd`: fichas de prendas, ficha de medios y datos de contacto. | — |
+| REQ-005 | Tabla semántica con datos reales | Alta | CUMPLE | `coleccion.html`: tabla comparativa con `caption`, `thead`, `tbody`, `tfoot`, `th scope` y `td`; tabla de medidas del polo con datos de la ficha AA-POLO-001. | — |
+| REQ-006 | Formulario accesible y validación nativa | Alta | CUMPLE | `contacto.html`: `form`, tres `fieldset` con `legend`, `label for` en todos los controles, `input` de tipos `text`, `email`, `tel`, `radio` y `checkbox`, `select` con `option`, `textarea`, botones `submit` y `reset`, atributos `required`, `minlength`, `maxlength` y `pattern`. Prueba automatizada: formulario vacío no válido; correo erróneo detectado (`typeMismatch`); formulario completo válido; no se envía nada y se muestra un aviso. | — |
+| REQ-007 | Multimedia funcional sin reproducción automática | Alta | CUMPLE | `experiencia.html`: `video` con dos `source` (WebM y MP4) y `track` WebVTT de 6 escenas; `audio` con dos `source` (MP3 y M4A); `figure`/`figcaption`. Prueba por HTTP: el video carga WebM y avanza, la pista carga 6 descripciones y el audio se reproduce. Sin `autoplay`. | Con `file://`, Chrome bloquea la pista WebVTT: abrir el sitio con un servidor local (ver README). |
+| REQ-008 | Cuatro documentos enlazados | Alta | CUMPLE | `index.html`, `coleccion.html`, `experiencia.html` y `contacto.html`, con navegación en el encabezado y el pie. 101 referencias locales comprobadas, 0 rotas. | — |
+| REQ-009 | Sintaxis válida | Alta | CUMPLE | Nu Html Checker (validator.w3.org/nu): 0 errores y 0 avisos en las cuatro páginas. IDs duplicados: 0. CSS Validation Service: 0 errores. | Volver a validar tras cualquier cambio. |
+| REQ-010 | Originalidad y autoría declaradas | Alta | CUMPLE PARCIALMENTE | Procedencia de recursos en `CUSTODIA-DEL-ORIGINAL.md`; autoría y asistencia de IA declaradas en el README. Bibliotecas externas: ninguna (solo Google Fonts). | El estudiante debe confirmar con el docente si el código asistido por IA cuenta dentro del límite del 50 % de código de terceros. No se calcula un porcentaje para no inventarlo. |
+| REQ-011 | Ortografía y redacción | Alta | CUMPLE PARCIALMENTE | Revisión editorial de páginas, textos alternativos, metadatos, mensajes del formulario y documentación. | Revisión final del estudiante antes de entregar (penalización de dos puntos por error). |
+| REQ-012 | Referencias APA 7 | Media | CUMPLE | `REFERENCIAS-APA.md`: 10 referencias; los 10 enlaces respondieron con código 200 el 16 de octubre de 2026. | — |
+| REQ-013 | Repositorio GitHub y ZIP `cedula_nombre.zip` | Alta | CUMPLE PARCIALMENTE | Historial Git local independiente en la rama `main`. | Publicar en `morfemartin/arrive-aruba-html5` (requiere autorización). Generar el ZIP con la cédula real del estudiante. |
+| REQ-014 | Video explicativo de 10 minutos como máximo | Alta | CUMPLE PARCIALMENTE | Guion en `GUION-VIDEO.md`. | La grabación corresponde al estudiante. |
+| TEC-001 | Custodia del repositorio matriz | Crítica | CUMPLE | Comprobación antes y después en `CUSTODIA-DEL-ORIGINAL.md` y `CONTROL-DE-CALIDAD.md`. | — |
+| TEC-002 | Responsive sin desbordamiento | Alta | CUMPLE | Prueba automatizada a 375, 768 y 1440 px en las cuatro páginas: `scrollWidth` igual al ancho de la ventana en los 12 casos. | — |
+| TEC-003 | Accesibilidad | Alta | CUMPLE PARCIALMENTE | Enlace para saltar al contenido, textos alternativos descriptivos, `aria-current`, foco visible, etiquetas de formulario, región `aria-live`, `prefers-reduced-motion`. | No se ejecutó una auditoría con lector de pantalla ni con Lighthouse. |
+| TEC-004 | Compatibilidad con GitHub Pages | Media | NO VERIFICADO | Todas las rutas son relativas. | Verificar la URL publicada cuando exista. |
+| TEC-005 | Historial Git independiente | Media | CUMPLE | Repositorio inicializado en la carpeta del proyecto, sin remoto del proyecto matriz. Ver `git log`. | — |
+| TEC-006 | Validación automática en GitHub Actions | Baja | NO VERIFICADO | `.github/workflows/validate.yml` descarga `vnu.jar` y valida las cuatro páginas. | Se comprobará en la primera ejecución tras publicar el repositorio. |
