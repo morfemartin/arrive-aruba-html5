@@ -1,0 +1,21 @@
+name: Validación HTML
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  html:
+    name: Nu Html Checker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Descargar el validador oficial (vnu.jar)
+        run: curl -sSL -o vnu.jar https://github.com/validator/validator/releases/download/latest/vnu.jar
+      - name: Validar las páginas HTML
+        run: java -jar vnu.jar --errors-only index.html coleccion.html experiencia.html contacto.html
