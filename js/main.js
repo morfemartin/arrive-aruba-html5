@@ -22,7 +22,27 @@ if ('IntersectionObserver' in window) {
   });
 }
 
-/* 2. Muestra en pantalla la pista <track> de descripciones del video. */
+/* 2. Video de portada: sin sonido y con botón para pausarlo.
+      Si el sistema pide movimiento reducido, el video empieza en pausa. */
+const heroVideo = document.getElementById('video-portada');
+const heroToggle = document.getElementById('control-portada');
+if (heroVideo && heroToggle) {
+  const setPaused = (paused) => {
+    if (paused) {
+      heroVideo.pause();
+    } else {
+      heroVideo.play().catch(() => {});
+    }
+    heroToggle.textContent = paused ? 'Reproducir video' : 'Pausar video';
+    heroToggle.setAttribute('aria-pressed', String(paused));
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setPaused(true);
+  }
+  heroToggle.addEventListener('click', () => setPaused(!heroVideo.paused));
+}
+
+/* 3. Muestra en pantalla la pista <track> de descripciones del video. */
 const video = document.getElementById('video-llegada');
 const descriptionOutput = document.getElementById('descripcion-video');
 if (video && descriptionOutput && video.textTracks.length > 0) {
@@ -36,7 +56,7 @@ if (video && descriptionOutput && video.textTracks.length > 0) {
   });
 }
 
-/* 3. Formulario de demostración: la validación es nativa de HTML5.
+/* 4. Formulario de demostración: la validación es nativa de HTML5.
       El evento submit solo se dispara si todos los campos son válidos;
       en ese caso se evita el envío y se informa de que no se ha enviado nada. */
 const form = document.getElementById('formulario-contacto');

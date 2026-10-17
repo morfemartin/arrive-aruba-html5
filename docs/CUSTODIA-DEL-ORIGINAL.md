@@ -43,7 +43,7 @@ Al terminar el desarrollo se repitió la comprobación y se comparó línea por 
 |---|---|---|
 | `assets/images/arrive-logo-blue.webp`, `arrive-logo-negative.webp` | Tema de Shopify (`assets/`) | Copia sin cambios |
 | `assets/images/arrive-beach-editorial.jpg`, `arrive-resort-editorial.jpg`, `arrive-island-banner.jpg` | Tema de Shopify | Copia sin cambios |
-| `assets/images/arrive-aruba-landscape.jpg` | Tema de Shopify (`arrive-aruba-landscape.webp`) | Convertida a JPG, redimensionada y recortada para eliminar un recuadro blanco |
+| `assets/images/uvm-logo.png` | Sello de la Universidad Valle del Momboy usado en el perfil de GitHub del autor (`morfemartin/morfemartin`) | Extraído sin cambios (PNG blanco con transparencia) |
 | `assets/images/arrive-aruba-*-front.jpg`, `*-detail.jpg` | Mockups 1:1 del equipo de diseño | Redimensionados a 900 px |
 | `assets/images/arrive-aruba-crew-tee-orange.jpg` | Imagen de producto publicada en la tienda | Redimensionada a 900 px |
 | `assets/images/arrive-aruba-llegada-poster.jpg` | Fotograma del segundo 7 del video | Extraído con FFmpeg |

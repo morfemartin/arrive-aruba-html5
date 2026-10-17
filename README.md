@@ -41,6 +41,7 @@ No es la tienda comercial: no tiene carrito, precios ni pagos. Es una implementa
 ## Características principales
 
 - Cuatro páginas HTML5 enlazadas entre sí.
+- Portada con video sin sonido, botón para pausarlo y las prendas como primera sección.
 - Semántica completa: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure` y `figcaption`.
 - Dos tablas con datos reales de las fichas técnicas de las prendas.
 - Formulario accesible con validación nativa y sin envío simulado.
@@ -97,7 +98,7 @@ No requiere instalar dependencias.
 
 | Página | Contenido |
 |---|---|
-| [`index.html`](index.html) | Portada, historias editoriales, prendas destacadas y cita de marca |
+| [`index.html`](index.html) | Portada con video, prendas destacadas, historias editoriales y cita de marca |
 | [`coleccion.html`](coleccion.html) | Tres prendas con fichas, tabla comparativa y tabla de medidas |
 | [`experiencia.html`](experiencia.html) | Video, audio, momentos de la llegada y el símbolo del divi-divi |
 | [`contacto.html`](contacto.html) | Formulario de contacto de demostración |
@@ -120,7 +121,7 @@ No requiere instalar dependencias.
 | Listas | `ul`, `ol`, `li`, `dl`, `dt`, `dd` | Colección, experiencia y contacto |
 | Tablas | `table`, `caption`, `thead`, `tbody`, `tfoot`, `tr`, `th`, `td` | Colección |
 | Formularios | `form`, `fieldset`, `legend`, `label`, `input`, `select`, `option`, `textarea`, `button` | Contacto |
-| Multimedia | `img`, `video`, `audio`, `source`, `track` | Todas (`img`) y experiencia |
+| Multimedia | `img`, `video`, `audio`, `source`, `track` | Todas (`img`), inicio (`video`) y experiencia |
 
 ## Matriz de cumplimiento
 
@@ -132,7 +133,7 @@ Resumen; el detalle con evidencias está en [docs/MATRIZ-DE-CUMPLIMIENTO.md](doc
 | REQ-010 Originalidad y autoría | Cumple parcialmente: falta la confirmación del docente sobre el código asistido por IA |
 | REQ-011 Ortografía | Cumple parcialmente: falta la lectura final del estudiante |
 | REQ-012 Referencias APA 7 | Cumple |
-| REQ-013 Entrega (GitHub y ZIP) | Cumple parcialmente: repositorio publicado; falta la cédula para el nombre del ZIP |
+| REQ-013 Entrega (GitHub y ZIP) | Cumple: repositorio publicado y ZIP `30539018_martin_morfe_carballo.zip` |
 | REQ-014 Video | Cumple parcialmente: guion listo; la grabación corresponde al estudiante |
 
 ## Validación
@@ -169,7 +170,7 @@ Los recursos de marca (logotipos, fotografías, video y favicon) proceden del pr
 
 ## Autoría y uso de herramientas
 
-- **Autor:** Martin Alejandro Morfe Carballo.
+- **Autor:** Martin Alejandro Morfe Carballo, C. I. 30.539.018 · Universidad Valle del Momboy.
 - **Código:** escrito específicamente para este proyecto (HTML, CSS y JavaScript), sin bibliotecas ni plantillas externas.
 - **Asistencia de IA:** el código y la documentación se elaboraron con la asistencia de un asistente de programación de IA (Claude, de Anthropic), bajo la dirección y la revisión del autor.
 - **Recursos reutilizados:** recursos gráficos y multimedia del proyecto propio Arrive Aruba (ver la sección anterior).
@@ -187,14 +188,14 @@ Ver [docs/REFERENCIAS-APA.md](docs/REFERENCIAS-APA.md) (formato APA 7).
 | Documentación | Terminada |
 | Repositorio en GitHub | Publicado: [morfemartin/arrive-aruba-html5](https://github.com/morfemartin/arrive-aruba-html5) |
 | GitHub Pages | Publicado y verificado: [https://morfemartin.github.io/arrive-aruba-html5/](https://morfemartin.github.io/arrive-aruba-html5/) |
-| ZIP de entrega | Pendiente de la cédula del estudiante |
+| ZIP de entrega | Generado: `30539018_martin_morfe_carballo.zip` |
 | Video explicativo | Guion listo; grabación pendiente |
 
 ## Entrega
 
 - Repositorio: [github.com/morfemartin/arrive-aruba-html5](https://github.com/morfemartin/arrive-aruba-html5).
 - Sitio publicado: [https://morfemartin.github.io/arrive-aruba-html5/](https://morfemartin.github.io/arrive-aruba-html5/).
-- ZIP de respaldo: `cedula_nombre.zip`, con la cédula y el nombre reales del estudiante. Formato ZIP, no RAR.
+- ZIP de respaldo: `30539018_martin_morfe_carballo.zip` (formato ZIP, no RAR).
 - Guion del video: [docs/GUION-VIDEO.md](docs/GUION-VIDEO.md).
 
 ## Licencia y reutilización

@@ -270,10 +270,31 @@ strong {
   margin: 0;
 }
 
-.hero-media img {
+.hero-media img,
+.hero-media video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-toggle {
+  position: absolute;
+  z-index: 2;
+  right: var(--space-side);
+  bottom: clamp(1.25rem, 4vw, 2.5rem);
+  min-height: 44px;
+  padding: .6rem 1.2rem;
+  border: 1px solid rgba(240, 240, 229, .6);
+  border-radius: var(--radius-pill);
+  background: rgba(23, 32, 42, .35);
+  color: var(--cream);
+  font: inherit;
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
 }
 
 .hero::after {
@@ -697,6 +718,38 @@ textarea:user-invalid {
   pointer-events: none;
   animation: sway 9s ease-in-out infinite alternate;
   transform-origin: 30% 100%;
+}
+
+.footer-academic {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: .5rem 1.25rem;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(240, 240, 229, .18);
+}
+
+.footer-academic img {
+  width: 64px;
+  grid-row: span 2;
+}
+
+.footer-academic p {
+  margin: 0;
+  color: rgba(240, 240, 229, .78);
+  font-size: .85rem;
+  line-height: 1.6;
+}
+
+.footer-academic strong {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+.footer-academic a {
+  color: var(--cream);
+  text-underline-offset: 3px;
 }
 
 .footer-legal {

@@ -90,6 +90,7 @@
     align-items: start;
   }
 
+  .footer-academic,
   .footer-legal {
     grid-column: 1 / -1;
   }
